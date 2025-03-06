@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiNePasS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .movies-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .movie-box {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(25% - 20px);
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .movie-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .movie-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-title {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .movie-details {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .movie-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .add-cart-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 0;
+            background-color: #ff5252;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .add-cart-btn:hover {
+            background-color: #e04848;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="section-title">Now Showing</h1>
+        <div class="movies-section">
+            <!-- Movie 1 -->
+            <div class="movie-box">
+                <img src="movie1.jpeg" alt="Mufasa" class="movie-img">
+                <h3 class="movie-title">Mufasa</h3>
+                <p class="movie-details">Screen: 2D/3D<br>Weekdays<br>Morning & Evening<br>Duration: 1h 53m</p>
+                <div class="movie-price">Rs. 630.00</div>
+                <a href="BuyTickets1.html" class="add-cart-btn">Add to Cart</a>
+            </div>
+            <!-- Movie 2 -->
+            <div class="movie-box">
+                <img src="movie2.jpeg" alt="Moana 2" class="movie-img">
+                <h3 class="movie-title">Moana 2</h3>
+                <p class="movie-details">Screen: 2D<br>Weekends<br>Morning & Night<br>Duration: 1h 40m</p>
+                <div class="movie-price">Rs. 546.00</div>
+                <a href="BuyTickets2.html" class="add-cart-btn">Add to Cart</a>
+            </div>
+            <!-- Movie 3 -->
+            <div class="movie-box">
+                <img src="movie3.avif" alt="Me Before You" class="movie-img">
+                <h3 class="movie-title">Me Before You</h3>
+                <p class="movie-details">Screen: 2D<br>Weekdays<br>Evening & Night<br>Duration: 1h 50m</p>
+                <div class="movie-price">Rs. 687.00</div>
+                <a href="BuyTickets3.html" class="add-cart-btn">Add to Cart</a>
+            </div>
+            <!-- Movie 4 -->
+            <div class="movie-box">
+                <img src="movie4.webp" alt="Khoobsurat" class="movie-img">
+                <h3 class="movie-title">Khoobsurat</h3>
+                <p class="movie-details">Screen: 2D<br>Saturday Only<br>Night<br>Duration: 2h 10m</p>
+                <div class="movie-price">Rs. 650.00</div>
+                <a href="BuyTickets4.html" class="add-cart-btn">Add to Cart</a>
+            </div>
+            <!-- Movie 5 -->
+            <div class="movie-box">
+                <img src="movie5.jpg" alt="The Magic Flute" class="movie-img">
+                <h3 class="movie-title">The Magic Flute</h3>
+                <p class="movie-details">Screen: 2D/3D<br>Weekdays<br>Morning<br>Duration: 2h 4m</p>
+                <div class="movie-price">Rs. 690.00</div>
+                <a href="BuyTickets5.html" class="add-cart-btn">Add to Cart</a>
+            </div>
+            <!-- Movie 6 -->
+            <div class="movie-box">
+                <img src="movie6.jpg" alt="Jumanji" class="movie-img">
+                <h3 class="movie-title">Jumanji</h3>
+                <p class="movie-details">Screen: 2D/3D<br>Sunday Only<br>Evening<br>Duration: 1h 59m</p>
+                <div class="movie-price">Rs. 675.00</div>
+                <a href="BuyTickets6.html" class="add-cart-btn">Add to Cart</a>
+            </div>
+            <!-- Movie 7 -->
+            <div class="movie-box">
+                <img src="movie7.webp" alt="Lucky Bhaskar" class="movie-img">
+                <h3 class="movie-title">Lucky Bhaskar</h3>
+                <p class="movie-details">Screen: 2D<br>Everyday<br>Morning, Evening & Night<br>Duration: 2h 31m</p>
+                <div class="movie-price">Rs. 700.00</div>
+                <a href="BuyTickets7.html" class="add-cart-btn">Add to Cart</a>
+            </div>
+            <!-- Movie 8 -->
+            <div class="movie-box">
+                <img src="movie8.jpeg" alt="Encanto" class="movie-img">
+                <h3 class="movie-title">Encanto</h3>
+                <p class="movie-details">Screen: 2D<br>Weekdays<br>Morning & Night<br>Duration: 1h 49m</p>
+                <div class="movie-price">Rs. 689.00</div>
+                <a href="BuyTickets8.html" class="add-cart-btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

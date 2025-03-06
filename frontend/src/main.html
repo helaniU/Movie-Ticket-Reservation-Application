@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x icon" href="icon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Reservaion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="top-bar">
+        <div class="left-content">
+            <a class="title" href="login.html"><h2>CiNePasS</h2></a>
+            <ul class="navigation">
+                <li><a class="active" href="main.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a href="Theaters.html">Theaters</a></li>
+            </ul>
+        </div>
+        <div class="right-content">
+            <a href="Cart.html">
+                <img src="cart-removebg-preview.png" alt="Cart" class="cart">
+            </a>
+            <div class="profile-img-box">
+                <a href="About.html">
+                    <img src="profile-removebg-preview.png" alt="Profile" class="profile">
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="side-bar">
+            <form action="0">
+                <div class="sidebar-groups">
+                    <h3 class="sg-titles">Categories</h3>
+                    <input type="checkbox" name="adventure" id="adventure" value="adventure">
+                    <label for="adventure">Adventure</label><br>
+                    <input type="checkbox" name="action" id="action" value="action">
+                    <label for="action">Action</label><br>
+                    <input type="checkbox" name="animation" id="animation" value="animation">
+                    <label for="animation">Animation</label><br>
+                    <input type="checkbox" name="comedy" id="comedy" value="comedy">
+                    <label for="comedy">Comedy</label><br>
+                    <input type="checkbox" name="science" id="science" value="science">
+                    <label for="science">Science Fiction</label><br>
+                    <input type="checkbox" name="thriller" id="thriller" value="thriller">
+                    <label for="thriller">Thriller</label><br>
+                    <input type="checkbox" name="history" id="history" value="history">
+                    <label for="history">History</label><br>
+                    <input type="checkbox" name="documentry" id="documentry" value="documentry">
+                    <label for="documentry">Documentry</label><br>
+                    <input type="checkbox" name="fantasy" id="fantasy" value="fantasy">
+                    <label for="fantasy">Fantasy</label><br>
+                    <input type="checkbox" name="horror" id="horror" value="horror">
+                    <label for="horror">Horror</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <h3 class="sg-titles">Language</h3>
+                    <input type="checkbox" name="english" id="english" value="english">
+                    <label for="english">English</label><br>
+                    <input type="checkbox" name="tamil" id="tamil" value="tamil">
+                    <label for="tamil">Tamil</label><br>
+                    <input type="checkbox" name="sinhala" id="sinhala" value="sinhala">
+                    <label for="sinhala">Sinhala</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <h3 class="sg-titles">Time</h3>
+                    <input type="radio" name="morning" id="morning" value="morning">
+                    <label for="morning">Morning</label><br>
+                    <input type="radio" name="evening" id="evening" value="evening">
+                    <label for="evening">Evening</label><br>
+                    <input type="radio" name="night" id="night" value="night">
+                    <label for="night">Night</label><br>
+                </div>
+                <div class="sidebar-groups">
+                    <a href="#" class="btn-1 btn">Apply Filters</a>
+                </div>
+            </form>
+        </div>
+        <div class="movies-conrainer">
+            <div class="upcoming-img-box">
+                <img src="upcoming.webp" alt="">
+                <p class="upcoming-title">Upcoming Movies</p>
+            </div>
+            <div class="buttons">
+                <a href="BookNow.html" class="btn">Book Now</a>
+                <a href="Trailers.html" class="btn-alt btn">Play Trailers</a>
+            </div>
+            <div class="current-movies">
+                <div class="current-movie">
+                    <div class="cm-img-box">
+                        <img src="movie 7.webp" alt="">
+                    </div>
+                    <h3 class="movie-title">Lucky Bhaskar</h3>
+                    <p class="screen-name">Screen : 2D</p>
+                    <div class="booking">
+                        <h2 class="price">Rs.700.00</h2>
+                        <a href="BuyTickets7.html" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="current-movie">
+                    <div class="cm-img-box">
+                        <img src="movie 2.jpeg" alt="">
+                    </div>
+                    <h3 class="movie-title">Moana 2</h3>
+                    <p class="screen-name">Screen : 2D/3D</p>
+                    <div class="booking">
+                        <h2 class="price">Rs.546.00</h2>
+                        <a href="BuyTickets7.html" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+                <div class="current-movie">
+                    <div class="cm-img-box">
+                        <img src="movie 3.avif" alt="">
+                    </div>
+                    <h3 class="movie-title">Me Before You</h3>
+                    <p class="screen-name">Screen : 2D</p>
+                    <div class="booking">
+                        <h2 class="price">Rs.687.00</h2>
+                        <a href="BuyTickets7.html" class="btn">Buy Tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

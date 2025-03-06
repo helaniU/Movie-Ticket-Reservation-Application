@@ -1,0 +1,189 @@
+.active{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:grey;
+}
+.btn{
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: orange;
+    border-radius: 2rem;
+    color: black;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: darkorange;
+}
+.btn-1{
+    width: 60%;
+    text-align: center;
+}
+body{
+    background: url('bg.avif')no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1100px;
+    justify-content: space-evenly;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem,1rem;
+}
+.title{
+    margin-right: 2rem;
+    color:orange;
+}
+.left-content,.right-content{
+    display: flex;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+    list-style: none;
+}
+.navigation li{
+    margin-right: 1rem;
+}
+.navigation li a:hover{
+    color: orange;
+}
+.active{
+    color: orange;
+}
+.menu,.cart,.help{
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.menu,.cart,.help{
+    margin-right: 1rem;
+}
+.menu{
+    margin-left: .8rem;
+}
+.profile-img-box{
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    height: 20px;
+    width: 20px;
+    border-radius:0;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-container{
+    color:whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+}
+.side-bar{
+    background:linear-gradient(45deg,rgba(225,225,225,.05),rgba(205,140,56,.15));
+    backdrop-filter: blur(5px);
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 2rem,2.5rem;
+}
+.sidebar-groups{
+    margin-bottom: .5rem;
+    margin-left: 3.5rem;
+}
+.sg-titles{
+    margin-bottom: .5rem;
+    color: wheat;
+}
+input{
+    margin-bottom: .6rem;
+}
+input[type=checkbox]:checked{
+    accent-color: orange;
+}
+input[type=radio]:checked{
+    accent-color: orange;
+}
+label{
+    margin-left: .5rem;
+
+}
+.upcoming-img-box{
+    position:relative;
+    height: 450px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+.upcoming-title{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: orange;
+    background-color: black;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid orange;
+    font-weight: 500;
+}
+.buttons{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 25rem;
+}
+.btn-alt{
+    background-color: black;
+    color: orange;
+    border: 1px solid orange;
+    margin-left: 1rem;
+}
+.btn-alt:hover{
+    color: black;
+    background-color: orange;
+}
+.cm-img-box{
+    position: relative;
+    height: 300px;
+    width: auto;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.movies-container{
+    padding-bottom: 2rem;
+}
+.current-movies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+}
+.current-movie{
+    background:linear-gradient(45deg,rgba(225,225,225,.05),rgba(205,140,56,.15));
+    padding: .5rem;
+    border-radius: .5rem;
+}
+.movie-title{
+    color: wheat;
+    margin-bottom: .2rem;
+}
+.booking{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.price{
+    color: orange;
+}

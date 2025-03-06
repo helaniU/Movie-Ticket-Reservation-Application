@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x icon" href="icon.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Reservaion</title>
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        header{
+            background: url('bg.avif');
+        }
+        body{
+            background: url('bg.avif')no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1100px;
+            justify-content: space-evenly;
+        }
+        .title{
+            margin-right: 2rem;
+            color:orange;
+        }
+        .booking{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .navigation{
+        display: flex;
+        list-style: none;
+    }
+    .navigation li{
+        margin-right: 1rem;
+    }
+    .navigation li a:hover{
+        color: orange;
+    }
+    a{
+    text-decoration: none;
+    color:grey;
+    }
+    .active{
+    color: orange;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container">
+            <a class="title" href="login.html"><h2>CiNePasS</h2></a>
+            <ul class="navigation">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="Movies.html">Movies</a></li>
+                <li><a class="active" href="#">Cart</a></li>
+            </ul>
+            <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Grab Your Tickets Now!</h2>
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="assets/img/movie 1.jpeg" alt="" class="movie-img">
+                <h3 class="movie-title">Mufasa</h3>
+                <p class="screen-name">Screen : 2D/3D
+                    <br>Weekdays
+                    <br>Morning & Evening
+                    <br>Duration : 1h 53m
+                </p>
+                <div class="booking">
+                    <h2 class="price">Rs.630.00</h2>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="assets/img/movie 2.jpeg" alt="" class="movie-img">
+                <h3 class="movie-title">Moana 2</h3>
+                <p class="screen-name">Screen : 2D
+                    <br>Weekends
+                    <br>Morning & Night
+                    <br>Duration : 1h 40m
+                </p>
+                <div class="booking">
+                    <h2 class="price">Rs.546.00</h2>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="assets/img/movie 3.avif" alt="" class="movie-img">
+                <h3 class="movie-title">Me Before You</h3>
+                <p class="screen-name">Screen : 2D
+                    <br>Weekdays
+                    <br>Evening & Night
+                    <br>Duration : 1h 50m
+                </p>
+                <div class="booking">
+                    <h2 class="price">Rs.687.00</h2>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="assets/img/movie 4.webp" alt="" class="movie-img">
+                <h3 class="movie-title">Khoobsurat</h3>
+                <p class="screen-name">Screen : 2D
+                    <br>Saturday Only
+                    <br>Night
+                    <br>Duration : 2h 10m
+                </p>
+                <div class="booking">
+                    <h2 class="price">Rs.650.00</h2>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="assets/img/movie 5.jpg" alt="" class="movie-img">
+                <h3 class="movie-title">The Magic Flute</h3>
+                <p class="screen-name">Screen : 2D/3D
+                    <br>Weekdays
+                    <br>Morning
+                    <br>Duration : 2h 4m
+                </p>
+                <div class="booking">
+                    <h2 class="price">Rs.690.00</h2>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="assets/img/movie 6.jpg" alt="" class="movie-img">
+                <h3 class="movie-title">Jumanji</h3>
+                <p class="screen-name">Screen : 2D/3D
+                    <br>Sunday Only
+                    <br>Evening
+                    <br>Duration : 1h 59m
+                </p>
+                <div class="booking">
+                    <h2 class="price">Rs.675.00</h2>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="assets/img/movie 7.webp" alt="" class="movie-img">
+                <h3 class="movie-title">Lucky Bhaskar</h3>
+                <p class="screen-name">Screen : 2D
+                    <br>Everyday
+                    <br>Morning ,Evening & Night
+                    <br>Duration : 2h 31m
+                </p>
+                <div class="booking">
+                    <h2 class="price">Rs.700.00</h2>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="assets/img/movie 8.jpeg" alt="" class="movie-img">
+                <h3 class="movie-title">Encanto</h3>
+                <p class="screen-name">Screen : 2D
+                    <br>Weekdays
+                    <br>Morning & Night
+                    <br>Duration : 1h 49m
+                </p>
+                <div class="booking">
+                    <h2 class="price">Rs.689.00</h2>
+                </div>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- link js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
