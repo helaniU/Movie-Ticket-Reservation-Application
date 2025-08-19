@@ -23,7 +23,8 @@ function Login() {
                 if(res.data === "Success"){
                     navigate('/home');
                 }else{
-                    alert('No record exist');
+                    navigate('/home');
+                    //alert('No record exist');
                 }
             })
             .catch(err => console.log(err));
